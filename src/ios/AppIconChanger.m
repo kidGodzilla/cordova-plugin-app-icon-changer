@@ -40,6 +40,23 @@
   }
 }
 
+- (void) resetToPrimaryIcon:(CDVInvokedUrlCommand*)command
+{
+  if (![self supportsAlternateIcons]) {
+    [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"This version of iOS doesn't support alternate icons"] callbackId:command.callbackId];
+    return;
+  }
+
+  [[UIApplication sharedApplication] setAlternateIconName:nil completionHandler:^(NSError *error) {
+      if (error != nil) {
+        NSString *errMsg = error.localizedDescription;
+        [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:errMsg] callbackId:command.callbackId];
+      } else {
+        [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_OK] callbackId:command.callbackId];
+      }
+  }];
+}
+
 
 #pragma mark - Helper functions
 

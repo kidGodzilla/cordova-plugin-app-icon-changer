@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EddyVerbruggen/cordova-plugin-app-icon-changer.git"
+    "url": "git+https://github.com/Omar-Bassyouni/cordova-plugin-app-icon-changer.git"
   },
   "keywords": [
     "Icon Changer",

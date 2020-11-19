@@ -1,0 +1,25 @@
+{
+  "name": "emesa-app-icon-changer",
+  "version": "1.0.0",
+  "description": "This plugin will change App icon on command",
+  "cordova": {
+    "id": "emesa-app-icon-changer",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omar-Bassyouni/cordova-plugin-app-icon-changer.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Omar Bassyouni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Omar-Bassyouni/cordova-plugin-app-icon-changer/issues"
+  },
+  "homepage": "https://github.com/Omar-Bassyouni/cordova-plugin-app-icon-changer#readme"
+}

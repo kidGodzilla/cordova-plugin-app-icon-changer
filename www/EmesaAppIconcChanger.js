@@ -18,4 +18,4 @@ EmesaAppIconcChanger.prototype.getCurrentAlternateIconName = function (onSuccess
     exec(onSuccess, onFail, "EmesaAppIconcChanger", "getCurrentAlternateIconName", []);
 };
 
-module.exports = new AppIconChanger();
+module.exports = new EmesaAppIconcChanger();

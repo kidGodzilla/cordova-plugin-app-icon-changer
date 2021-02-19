@@ -27,7 +27,7 @@ $ cordova plugin add cordova-plugin-app-icon-changer
 Only iOS 10.3 and up support this feature, so you may want to check beforehand: 
 
 ```js
-AppIconChanger.isSupported(
+cordova.plugins.EmesaAppIconcChanger.isSupported(
   function(supported) {
     console.log("Supported? " + supported);
   }
@@ -43,7 +43,7 @@ Note 1: iOS will notify the user the icon changed, but this plugin allows you to
 Note 2: Changing the app icon is only allowed when the app is in the foreground, so forget about that weather app which silently updates its app icon.
 
 ```js
-AppIconChanger.changeIcon(
+cordova.plugins.EmesaAppIconcChanger.changeIcon(
     {
       iconName: "icon-phonegap",
       suppressUserNotification: true
